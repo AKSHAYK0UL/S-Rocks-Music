@@ -87,8 +87,8 @@ This project uses Firebase Firestore to fetch dynamic service card data. Configu
    └── autoID (document)
        ├── title: "Music Production"
        ├── description: "Custom instrumentals & film scoring"
-       ├── background image: "https://background_image.png"
-       └── leading image: "https://leading_image.png"
+       ├── background_image: "https://background_image.png"
+       └── leading_image: "https://leading_image.png"
    ```
 
 ---
