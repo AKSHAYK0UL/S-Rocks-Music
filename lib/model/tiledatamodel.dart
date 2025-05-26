@@ -2,21 +2,21 @@ class TileDataModel {
   final String imageBGUrl;
   final String imageLDUrl;
   final String title;
-  final String subtitle;
+  final String description;
 
   TileDataModel({
     required this.imageBGUrl,
     required this.imageLDUrl,
     required this.title,
-    required this.subtitle,
+    required this.description,
   });
 
   factory TileDataModel.fromJson(Map<String, dynamic> json) {
     return TileDataModel(
-      imageBGUrl: json['image_bg_url'] ?? '',
-      imageLDUrl: json['image_lg_url'] ?? '',
+      imageBGUrl: json['background_image'] ?? '',
+      imageLDUrl: json['leading_image'] ?? '',
       title: json['title'] ?? '',
-      subtitle: json['subtitle'] ?? '',
+      description: json['description'] ?? '',
     );
   }
 }

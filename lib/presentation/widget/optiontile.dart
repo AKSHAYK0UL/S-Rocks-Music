@@ -66,7 +66,7 @@ class OptionTile extends StatelessWidget {
                         ),
                         const SizedBox(height: 4),
                         Text(
-                          tileData.subtitle,
+                          tileData.description,
                           style: GoogleFonts.syne(
                             fontWeight: FontWeight.w400,
                             fontSize: 13,
