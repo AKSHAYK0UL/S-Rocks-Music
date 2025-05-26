@@ -135,7 +135,3 @@ lib/
 
 ---
 
-## 👨‍💻 Author  
-
-Made with ❤️ by **Akshay Koul**  
-*Flutter Mini Project Assignment – 2025*
