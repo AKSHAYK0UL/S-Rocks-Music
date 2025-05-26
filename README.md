@@ -1,71 +1,71 @@
-# S.Rocks.Music 🎶
 
-## State Management Approach: BLoC
+# S.Rocks.Music 🎶  
 
+## State Management Approach: BLoC  
 This project uses **BLoC** for state management, adhering to the MVVM architecture pattern. The structure is layered as follows:
 
-- **Network Layer**: Handles Firebase data source communications.
-- **Repository Layer**: Abstracts network logic and provides a clean API to the app.
-- **Model Layer**: Defines the structure of each music service (title, description, background image, leading image).
-- **BLoC Layer**: Manages business logic and state transitions (loading, success, error).
-- **Presentation Layer**: Contains UI components, organized into screens and widgets.
+- **Network Layer**: Handles Firebase data source communications.  
+- **Repository Layer**: Abstracts network logic and provides a clean API to the app.  
+- **Model Layer**: Defines the structure of each music service (title, description, background image, leading image).  
+- **BLoC Layer**: Manages business logic and state transitions (loading, success, error).  
+- **Presentation Layer**: Contains UI components, organized into screens and widgets.  
 
 ---
 
-## 🔧 Setup and Installation
+## 🔧 Setup and Installation  
 
 1. **Install Flutter**  
-   Follow the [official guide](https://flutter.dev/docs/get-started/install) to install Flutter.
+   Follow the [official guide](https://flutter.dev/docs/get-started/install) to install Flutter.  
 
-2. **Clone the Repository**
+2. **Clone the Repository**  
    ```bash
    git clone https://github.com/AKSHAYK0UL/S-Rocks-Music.git
    ```
 
-3. **Navigate to the Project Directory**
+3. **Navigate to the Project Directory**  
    ```bash
    cd s_rocks_music
    ```
 
-4. **Install Dependencies**
+4. **Install Dependencies**  
    ```bash
    flutter pub get
    ```
 
-5. **Run the App**
+5. **Run the App**  
    ```bash
    flutter run
    ```
 
 ---
 
-## 🔥 Firebase Setup
+## 🔥 Firebase Setup  
 
 This project uses Firebase Firestore to fetch dynamic service card data. Configure Firebase using FlutterFire CLI:
 
-1. **Login to Firebase**
+1. **Login to Firebase**  
    ```bash
    firebase login
    ```
 
-2. **Activate FlutterFire CLI**
+2. **Activate FlutterFire CLI**  
    ```bash
    dart pub global activate flutterfire_cli
    ```
 
-3. **Configure Firebase**
+3. **Configure Firebase**  
    ```bash
    flutterfire configure
    ```
    This generates a `firebase_options.dart` file.
 
-4. **Add Firebase Packages**
+4. **Add Firebase Packages**  
    ```bash
    flutter pub add firebase_core
    flutter pub add cloud_firestore
    ```
 
-5. **Initialize Firebase in `main.dart`**
+5. **Initialize Firebase in `main.dart`**  
    ```dart
    void main() async {
      WidgetsFlutterBinding.ensureInitialized();
@@ -81,7 +81,6 @@ This project uses Firebase Firestore to fetch dynamic service card data. Configu
 
 6. **Create Firestore Data**  
    In the Firebase Console, add a collection named `tiledata` with this structure:
-
    ```
    tiledata (collection)
    └── autoID (document)
@@ -93,7 +92,7 @@ This project uses Firebase Firestore to fetch dynamic service card data. Configu
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure  
 
 ```
 lib/
@@ -126,16 +125,17 @@ lib/
 
 ---
 
-## ✨ Features
+## ✨ Features  
 
-- 🎵 Clean and responsive UI based on Figma design
-- 🔥 Firebase Firestore integration for dynamic card content
-- 🧠 MVVM structure with BLoC state management
-- 🧭 Seamless navigation to detail screen on card tap
+- 🎵 Clean and responsive UI based on Figma design  
+- 🔥 Firebase Firestore integration for dynamic card content  
+- 🧠 MVVM structure with BLoC state management  
+- 🧭 Seamless navigation to detail screen on card tap  
+- 🎬 [Demo Video](https://drive.google.com/file/d/1qBHVmFCLcBhJ0KzNA2lazt5Rv77Kz08f/view?usp=drive_link)
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author  
 
 Made with ❤️ by **Akshay Koul**  
 *Flutter Mini Project Assignment – 2025*
